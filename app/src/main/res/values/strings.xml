@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Luga Luga</string>
+    <string name="input">Senha</string>
+    <string name="inputEmail">Email</string>
+    <string name="btnLogin">Login</string>
+    <string name="textEsqueceu">Esqueci a senha</string>
 </resources>
