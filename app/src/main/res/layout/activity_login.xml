@@ -2,7 +2,6 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/input_email"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".view.LoginActivity">
@@ -15,11 +14,10 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/ic_android_black_24dp" />
+        app:srcCompat="@drawable/ic_android_black_24dp" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/filledTextField"
-        style="?attr/textInputFilledStyle"
+        android:id="@+id/input_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/inputEmail"
@@ -34,13 +32,14 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/filledTextField2"
-        app:endIconMode="password_toggle"
-        style="?attr/textInputFilledStyle"
+        android:id="@+id/input_senha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="password"
-        app:layout_constraintTop_toBottomOf="@+id/filledTextField">
+        app:endIconMode="password_toggle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_email">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -55,7 +54,7 @@
         android:text="Login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/filledTextField2" />
+        app:layout_constraintTop_toBottomOf="@+id/input_senha" />
 
     <TextView
         android:id="@+id/esqueceu"
@@ -66,6 +65,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_login"
         android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/fazerCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fazer Cadastro"
+        android:textColor="@color/blue_dark"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/esqueceu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
 
 
